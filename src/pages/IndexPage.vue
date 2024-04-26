@@ -1,10 +1,14 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    />
+  <q-page class="q-pa-xl q-mt-xl">
+    <div>
+      <p class="text-h1 text-weight-bold letter-space-lg q-mb-sm">I'm Takumi</p>
+      <p class="text-h1 text-weight-bold letter-space-lg q-mb-sm">Hendricks</p>
+      <p class="text-h1 text-weight-bold letter-space-xl text-indigo">Software Engineer</p>
+    </div>
+    <p class="text-h4">
+      I'm a software engineer with a passion for building web applications. I'm
+      proficient in frameworks such as Django, Vue.js, and React
+    </p>
   </q-page>
 </template>
 
