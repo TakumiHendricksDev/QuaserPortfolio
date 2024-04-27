@@ -1,3 +1,4 @@
+require('dotenv').config();
 /* eslint-env node */
 
 /*
@@ -63,7 +64,15 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      env: require('dotenv').config().parsed,
+      env: {
+        VUE_APP_API_KEY: process.env.VUE_APP_API_KEY,
+        VUE_APP_AUTH_DOMAIN: process.env.VUE_APP_AUTH_DOMAIN,
+        VUE_APP_PROJECT_ID: process.env.VUE_APP_PROJECT_ID,
+        VUE_APP_STORAGE_BUCKET: process.env.VUE_APP_STORAGE_BUCKET,
+        VUE_APP_MESSAGING_SENDER_ID: process.env.VUE_APP_MESSAGING_SENDER_ID,
+        VUE_APP_APP_ID: process.env.VUE_APP_APP_ID,
+        VUE_APP_MEASUREMENT_ID: process.env.VUE_APP_MEASUREMENT_ID,
+      },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,

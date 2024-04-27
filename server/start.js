@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 // when using Vue Router "history" mode
 const express = require("express"),
   serveStatic = require("serve-static"),
