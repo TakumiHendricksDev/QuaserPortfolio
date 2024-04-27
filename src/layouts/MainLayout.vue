@@ -2,7 +2,9 @@
   <q-layout view="lHh Lpr lFf">
     <q-header class="bg-white q-pa-md">
       <q-toolbar>
-        <q-toolbar-title class="text-black text-weight-regular"> Takumi Hendricks </q-toolbar-title>
+        <q-toolbar-title class="text-black text-weight-regular">
+          Takumi Hendricks
+        </q-toolbar-title>
         <q-btn
           flat
           dense

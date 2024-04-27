@@ -2,12 +2,13 @@
 
 import { initializeApp } from "firebase/app";
 
+import { getFirestore } from "firebase/firestore";
+
 import { getAnalytics } from "firebase/analytics";
 
 // TODO: Add SDKs for Firebase products that you want to use
 
 // https://firebase.google.com/docs/web/setup#available-libraries
-
 
 // Your web app's Firebase configuration
 
@@ -20,12 +21,13 @@ const firebaseConfig = {
   storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
   messagingSenderId: process.env.VUE_APP_MESSAGING_SENDER_ID,
   appId: process.env.VUE_APP_APP_ID,
-  measurementId: process.env.VUE_APP_MEASUREMENT_ID
+  measurementId: process.env.VUE_APP_MEASUREMENT_ID,
 };
-
 
 // Initialize Firebase
 
 const app = initializeApp(firebaseConfig);
+
+export const db = getFirestore(app);
 
 const analytics = getAnalytics(app);
