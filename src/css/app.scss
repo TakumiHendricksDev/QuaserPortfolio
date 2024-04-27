@@ -1,8 +1,14 @@
 // app global css in SCSS form
 .letter-space-lg {
-  letter-spacing: .5rem;
+  letter-spacing: .3rem;
 }
 
 .letter-space-xl {
-  letter-spacing: 1rem;
+  letter-spacing: .6rem;
+}
+
+.card {
+  padding: 4rem;
+  border: $primary 2px solid;
+  border-radius: 12px;
 }
