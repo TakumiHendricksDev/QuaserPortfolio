@@ -14,9 +14,31 @@
 }
 
 .card-sm {
-  width: 250px;
+  width: 300px;
 }
 
 .border-white {
   border: 2px solid $grey-5;
+}
+
+.none-decoration {
+  text-decoration: none;
+}
+
+.title-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.margin-bottom-humongous {
+  margin-bottom: 15rem;
+}
+
+.img-card-round {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  object-fit: cover;
 }

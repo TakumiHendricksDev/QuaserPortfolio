@@ -5,29 +5,19 @@
         <q-toolbar-title class="text-black text-weight-regular">
           Takumi Hendricks
         </q-toolbar-title>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          class="text-black"
-          @click="toggleLeftDrawer"
-        />
+        <q-tabs v-model="tab" class="text-grey-8" shrink>
+          <router-link class="none-decoration text-indigo" to="/">
+            <q-tab name="/" label="Home" />
+          </router-link>
+          <router-link class="none-decoration text-indigo" to="/posts">
+            <q-tab name="/posts" label="Posts" />
+          </router-link>
+          <router-link class="none-decoration text-indigo" to="/contact">
+            <q-tab name="/contact" label="Contact Me" />
+          </router-link>
+        </q-tabs>
       </q-toolbar>
     </q-header>
-
-    <q-drawer v-model="leftDrawerOpen" bordered>
-      <q-list>
-        <q-item-label header> Essential Links </q-item-label>
-
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
 
     <q-page-container>
       <router-view />
@@ -35,36 +25,11 @@
   </q-layout>
 </template>
 
-<script>
-import { defineComponent, ref } from "vue";
-import EssentialLink from "components/EssentialLink.vue";
+<script setup>
+import {ref} from "vue";
+import { useRoute } from "vue-router";
 
-const linksList = [
-  {
-    title: "Posts",
-    caption: "My Posts",
-    icon: "message",
-    link: "https://quasar.dev",
-  },
-];
-
-export default defineComponent({
-  name: "MainLayout",
-
-  components: {
-    EssentialLink,
-  },
-
-  setup() {
-    const leftDrawerOpen = ref(false);
-
-    return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value;
-      },
-    };
-  },
-});
+const route = useRoute();
+// Set the tab to the current route path
+const tab = ref(route.path);
 </script>

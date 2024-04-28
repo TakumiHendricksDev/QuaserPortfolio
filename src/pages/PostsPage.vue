@@ -1,10 +1,12 @@
 <template>
-  <div class="bg-grey-10 q-py-xl q-px-xl shadow-10">
-    <div class="text-h4 text-bold text-grey-2 q-mb-xl">Recent Post</div>
-    <div class="flex">
-      <post-card v-for="post in posts" :key="post.id" :post="post" />
+  <q-page>
+    <div class="q-pa-xl">
+      <div class="text-h4 text-bold text-grey-9 q-mb-xl">Posts</div>
+      <div>
+        <post-card v-for="post in posts" :key="post.id" :post="post" />
+      </div>
     </div>
-  </div>
+  </q-page>
 </template>
 
 <script setup>
@@ -24,3 +26,4 @@ onMounted(async () => {
   posts.value = await getPosts();
 });
 </script>
+
