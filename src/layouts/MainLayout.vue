@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header class="bg-white q-pa-md">
+    <q-header class="bg-white q-pa-lg">
       <q-toolbar>
         <q-toolbar-title class="text-black text-weight-regular">
           Takumi Hendricks

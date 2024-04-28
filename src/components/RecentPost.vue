@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h4 class="text-bold">Recent Post</h4>
-    <div v-for="post in posts" :key="post.id">
-      <post-card :post="post" />
+  <div class="bg-grey-10 q-py-xl q-px-xl">
+    <div class="text-h4 text-bold text-grey-2 q-mb-xl">Recent Post</div>
+    <div class="flex">
+      <post-card v-for="post in posts" :key="post.id" :post="post" />
     </div>
   </div>
 </template>
