@@ -20,11 +20,15 @@
     "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "firebase": "^10.11.1",
+    "highlight.js": "^11.9.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^8.6.7",
     "pinia": "^2.0.11",
     "quasar": "^2.6.0",
     "serve-static": "^1.15.0",
     "vue": "^3.0.0",
     "vue-i18n": "^9.0.0",
+    "vue-markdown-render": "^2.1.1",
     "vue-router": "^4.0.0"
   },
   "devDependencies": {

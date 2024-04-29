@@ -2,7 +2,7 @@
   <div class="bg-grey-10 q-py-xl q-px-xl shadow-10">
     <div class="text-h4 text-bold text-grey-2 q-mb-xl">Recent Post</div>
     <div class="flex">
-      <post-card v-for="post in posts" :key="post.id" :post="post" />
+      <post-card v-for="post in posts" :key="post.id" :post="post" class="q-mr-lg" />
     </div>
   </div>
 </template>

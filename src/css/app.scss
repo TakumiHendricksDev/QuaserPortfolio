@@ -15,6 +15,11 @@
 
 .card-sm {
   width: 300px;
+  transition: transform 0.3s ease-in-out; // This will make the scaling smooth
+
+  &:hover {
+    transform: scale(1.1); // This will increase the size of the element by 10% when hovered
+  }
 }
 
 .border-white {
@@ -41,4 +46,22 @@
   height: 500px;
   border-radius: 100%;
   object-fit: cover;
+}
+
+.hljs-tag {
+  color: #00897b;
+}
+
+.code-block {
+  background-color: $grey-2;
+  border: $grey-5 1px solid;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.markdown-heading {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-underline: $indigo-5;
 }
