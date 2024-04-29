@@ -18,7 +18,8 @@
         </q-tabs>
       </q-toolbar>
       <q-banner inline-actions rounded class="bg-orange text-white">
-        This portfolio website is still in development. Many features are not yet implemented.
+        This portfolio website is still in development. Many features are not
+        yet implemented.
       </q-banner>
     </q-header>
 

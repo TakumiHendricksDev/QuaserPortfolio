@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="q-pa-xl">
-      <div class="text-h2 text-bold text-grey-9 q-mb-xl">Posts</div>
+      <div class="text-h2 text-grey-9 q-mb-xl">Posts</div>
       <div class="flex column">
         <post-card v-for="post in posts" :key="post.id" :post="post" />
       </div>
