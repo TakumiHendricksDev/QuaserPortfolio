@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header class="bg-white q-pa-lg">
-      <q-toolbar>
+      <q-toolbar class="q-mb-md">
         <q-toolbar-title class="text-black text-weight-regular">
           Takumi Hendricks
         </q-toolbar-title>
@@ -17,6 +17,9 @@
           </router-link>
         </q-tabs>
       </q-toolbar>
+      <q-banner inline-actions rounded class="bg-orange text-white">
+        This portfolio website is still in development. Many features are not yet implemented.
+      </q-banner>
     </q-header>
 
     <q-page-container>
