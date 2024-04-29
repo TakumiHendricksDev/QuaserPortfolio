@@ -18,7 +18,9 @@
   transition: transform 0.3s ease-in-out; // This will make the scaling smooth
 
   &:hover {
-    transform: scale(1.1); // This will increase the size of the element by 10% when hovered
+    transform: scale(
+      1.1
+    ); // This will increase the size of the element by 10% when hovered
   }
 }
 

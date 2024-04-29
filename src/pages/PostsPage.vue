@@ -26,4 +26,3 @@ onMounted(async () => {
   posts.value = await getPosts();
 });
 </script>
-

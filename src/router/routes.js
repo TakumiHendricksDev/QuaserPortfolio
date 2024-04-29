@@ -7,17 +7,23 @@ const routes = [
   {
     path: "/contact",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "/contact", component: () => import("pages/ContactPage.vue") }],
+    children: [
+      { path: "/contact", component: () => import("pages/ContactPage.vue") },
+    ],
   },
   {
     path: "/posts",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "/posts", component: () => import("pages/PostsPage.vue") }],
+    children: [
+      { path: "/posts", component: () => import("pages/PostsPage.vue") },
+    ],
   },
   {
     path: "/posts/:id",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "/posts/:id", component: () => import("pages/PostPage.vue") }],
+    children: [
+      { path: "/posts/:id", component: () => import("pages/PostPage.vue") },
+    ],
   },
 
   // Always leave this as last one,
