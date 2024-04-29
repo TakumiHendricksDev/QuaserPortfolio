@@ -72,6 +72,9 @@ module.exports = configure(function (/* ctx */) {
         VUE_APP_MESSAGING_SENDER_ID: process.env.VUE_APP_MESSAGING_SENDER_ID,
         VUE_APP_APP_ID: process.env.VUE_APP_APP_ID,
         VUE_APP_MEASUREMENT_ID: process.env.VUE_APP_MEASUREMENT_ID,
+        VUE_APP_EMAIL_SERVICE_ID: process.env.VUE_APP_EMAIL_SERVICE_ID,
+        VUE_APP_EMAIL_TEMPLATE_ID: process.env.VUE_APP_EMAIL_TEMPLATE_ID,
+        VUE_APP_EMAIL_USER_ID: process.env.VUE_APP_EMAIL_USER_ID,
       },
       // rawDefine: {}
       // ignorePublicFolder: true,

@@ -34,14 +34,14 @@ const message = ref("");
 function sendEmail(e) {
   try {
     emailjs.send(
-      "service_qi9erf3",
-      "template_9fyqu09",
+        process.env.VUE_APP_EMAIL_SERVICE_ID,
+        process.env.VUE_APP_EMAIL_TEMPLATE_ID,
       {
         from_name: name.value,
         message: message.value,
         reply_to: email.value,
       },
-      "OaoPvE-6y9EBOWCQI"
+      process.env.VUE_APP_EMAIL_USER_ID
     );
   } catch (error) {
     console.log({ error });
