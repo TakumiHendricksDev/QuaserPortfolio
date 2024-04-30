@@ -118,3 +118,15 @@
   border: $grey-5 1px solid;
   border-radius: 12px;
 }
+
+.ais-Hits-item {
+  min-width: 300px;
+  min-height: 250px;
+  box-shadow: none !important;
+}
+
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

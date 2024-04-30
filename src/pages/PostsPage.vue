@@ -20,11 +20,18 @@
       <div class="q-pa-xl bg-dark vh-full">
         <ais-hits>
           <template v-slot:item="{ item }">
-            <router-link class="none-decoration" :to="`/posts/${item.id}`">
-              <div class="text-h6 text-grey-1">{{ item.title }}</div>
-              <div class="text-grey-2 q-mb-xl">{{ item.description }}</div>
-              <div class="flex justify-end text-grey-3">
-                {{ formatDate(item.created_at) }}
+            <router-link
+              class="none-decoration full-height flex-column-between"
+              :to="`/posts/${item.id}`"
+            >
+              <div>
+                <div class="text-h6 text-grey-1">{{ item.title }}</div>
+                <div class="text-grey-2">{{ item.description }}</div>
+              </div>
+              <div>
+                <div class="flex justify-end text-grey-4">
+                  {{ formatDate(item.created_at) }}
+                </div>
               </div>
             </router-link>
           </template>
