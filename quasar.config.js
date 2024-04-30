@@ -29,7 +29,7 @@ module.exports = configure(function (/* ctx */) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli/boot-files
-    boot: ["i18n", "axios"],
+    boot: ["i18n", "axios", "instantsearch"],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: ["app.scss"],
@@ -75,6 +75,8 @@ module.exports = configure(function (/* ctx */) {
         VUE_APP_EMAIL_SERVICE_ID: process.env.VUE_APP_EMAIL_SERVICE_ID,
         VUE_APP_EMAIL_TEMPLATE_ID: process.env.VUE_APP_EMAIL_TEMPLATE_ID,
         VUE_APP_EMAIL_USER_ID: process.env.VUE_APP_EMAIL_USER_ID,
+        VUE_APP_ALGOLIA_APP_ID: process.env.VUE_APP_ALGOLIA_APP_ID,
+        VUE_APP_ALGOLIA_SEARCH_KEY: process.env.VUE_APP_ALGOLIA_SEARCH_KEY,
       },
       // rawDefine: {}
       // ignorePublicFolder: true,
