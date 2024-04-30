@@ -3,10 +3,10 @@
     <div class="text-h4 text-bold text-grey-2 q-mb-xl">Recent Post</div>
     <div class="flex">
       <post-card
-        v-for="post in posts"
+        v-for="post in recentPosts()"
         :key="post.id"
         :post="post"
-        class="q-mr-lg"
+        class="q-mr-lg q-mb-lg"
       />
     </div>
   </div>
@@ -19,6 +19,11 @@ import { onMounted, ref } from "vue";
 import PostCard from "components/PostCard.vue";
 
 const posts = ref([]);
+
+function recentPosts() {
+  return posts.value.slice(0, 5);
+}
+
 async function getPosts() {
   const postCollection = collection(db, "post");
   const postSnapshot = await getDocs(postCollection);

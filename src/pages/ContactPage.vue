@@ -1,18 +1,18 @@
 <template>
   <q-page>
     <div class="q-pa-xl">
-      <div class="text-h2 q-mb-lg">Contact Me</div>
+      <div class="text-h2-responsive q-mb-lg">Contact Me</div>
       <form @submit.prevent="sendEmail">
         <div class="q-mb-md">
-          <label class="block text-h6 q-mb-sm">Name</label>
-          <q-input outlined v-model="name" label="name" />
+          <label class="block text-h6-responsive q-mb-sm">Name</label>
+          <q-input filled v-model="name" label="name" />
         </div>
         <div class="q-mb-md">
-          <label class="block text-h6 q-mb-sm">Email</label>
-          <q-input outlined v-model="email" label="email" />
+          <label class="block text-h6-responsive q-mb-sm">Email</label>
+          <q-input filled v-model="email" label="email" />
         </div>
         <div class="q-mb-md">
-          <label class="block text-h6 q-mb-sm">Message</label>
+          <label class="block text-h6-responsive q-mb-sm">Message</label>
           <div class="" style="max-width: 100%">
             <q-input v-model="message" filled type="textarea" />
           </div>
