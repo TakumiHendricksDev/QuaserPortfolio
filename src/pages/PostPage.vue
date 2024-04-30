@@ -2,12 +2,14 @@
   <q-page>
     <div class="q-pa-xl">
       <div class="text-h2 text-bold text-grey-9 q-mb-md">{{ post.title }}</div>
-      <div class="text-h4 text-grey-8">{{ post.description }}</div>
-      <vue-markdown
-        :source="markdownContent"
-        :options="md.options"
-        :plugins="plugins"
-      />
+      <div class="text-h4 text-grey-8 q-mb-xl">{{ post.description }}</div>
+      <div class="q-pa-lg bg-grey-1 markdown-container">
+        <vue-markdown
+          :source="markdownContent"
+          :options="md.options"
+          :plugins="plugins"
+        />
+      </div>
     </div>
   </q-page>
 </template>
