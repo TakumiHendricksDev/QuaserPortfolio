@@ -26,9 +26,12 @@
           </router-link>
         </q-tabs>
       </q-toolbar>
-      <q-banner inline-actions rounded class="bg-orange text-white">
+      <q-banner inline-actions rounded class="bg-indigo text-white" v-if="showBanner">
         This portfolio website is still in development. Many features are not
         yet implemented.
+        <template v-slot:action>
+          <q-btn flat label="Dismiss" @click="hideBanner()" />
+        </template>
       </q-banner>
     </q-header>
 
@@ -61,4 +64,9 @@ const route = useRoute();
 // Set the tab to the current route path
 const tab = ref(route.path);
 const drawerOpen = ref(false);
+const showBanner = ref(true);
+
+function hideBanner() {
+  showBanner.value = false;
+}
 </script>
