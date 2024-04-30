@@ -2,10 +2,14 @@
   <q-page>
     <div class="row justify-center q-mt-xl q-mb-xl">
       <div class="col-12 col-md-8 col-lg-6 text-center">
-        <p class="text-h1-responsive text-weight-bold letter-space-lg q-mb-sm text-grey-9">
+        <p
+          class="text-h1-responsive text-weight-bold letter-space-lg q-mb-sm text-grey-9"
+        >
           Takumi Hendricks
         </p>
-        <p class="text-h2-responsive text-weight-bold letter-space-xl text-indigo q-mb-xl">
+        <p
+          class="text-h2-responsive text-weight-bold letter-space-xl text-indigo q-mb-xl"
+        >
           Software Engineer
         </p>
         <img

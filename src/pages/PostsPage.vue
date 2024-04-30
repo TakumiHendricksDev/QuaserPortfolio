@@ -3,7 +3,9 @@
     <div class="row justify-center q-mt-xl q-mb-xl">
       <div class="col-12 col-md-8 col-lg-6 text-center flex flex-center">
         <div>
-          <div class="text-h2-responsive text-weight-bold letter-space-lg q-mb-sm text-grey-9">
+          <div
+            class="text-h2-responsive text-weight-bold letter-space-lg q-mb-sm text-grey-9"
+          >
             Posts
           </div>
           <div class="text-h6-responsive text-grey-9 text-weight-regular">

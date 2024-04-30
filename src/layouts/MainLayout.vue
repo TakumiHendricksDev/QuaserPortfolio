@@ -26,7 +26,12 @@
           </router-link>
         </q-tabs>
       </q-toolbar>
-      <q-banner inline-actions rounded class="bg-indigo text-white" v-if="showBanner">
+      <q-banner
+        inline-actions
+        rounded
+        class="bg-indigo text-white"
+        v-if="showBanner"
+      >
         This portfolio website is still in development. Many features are not
         yet implemented.
         <template v-slot:action>

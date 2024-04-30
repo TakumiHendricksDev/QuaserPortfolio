@@ -1,8 +1,8 @@
 {
   "name": "quasar-starter",
   "version": "0.0.1",
-  "description": "Quasar starter app",
-  "productName": "Quasar starter app",
+  "description": "Takumi Hendricks Portfolio website",
+  "productName": "Portfolio",
   "author": "YAV.AI <contact@yav.ai>",
   "private": true,
   "scripts": {
