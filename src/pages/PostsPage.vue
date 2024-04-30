@@ -2,16 +2,16 @@
   <q-page>
     <ais-instant-search :search-client="searchClient" index-name="Post">
       <div class="row justify-center q-mt-xl q-mb-xl">
-        <div class="col-12 col-md-8 col-lg-6 text-center flex flex-center">
-          <div class="q-mb-lg">
-            <div
-              class="text-h2-responsive text-weight-bold letter-space-lg q-mb-sm text-grey-9"
-            >
-              Posts
-            </div>
-            <div class="text-h6-responsive text-grey-9 text-weight-regular">
-              Here are posts of many things I've learned about in my career.
-            </div>
+        <div class="text-center flex column flex-center">
+          <div
+            class="text-h2-responsive text-weight-bold letter-space-lg q-mb-sm text-grey-9"
+          >
+            Posts
+          </div>
+          <div
+            class="text-h6-responsive text-grey-9 text-weight-regular q-mb-lg"
+          >
+            Here are posts of many things I've learned about in my career.
           </div>
 
           <ais-search-box />
