@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="block none-decoration border-white rounded-borders q-pa-md card-sm text-white bg-grey-10"
+    class="block none-decoration border-yellow-10 q-pa-md card-sm text-white bg-grey-10"
     :to="`/posts/${post.id}`"
   >
     <div class="text-bold text-h6">{{ post.title }}</div>
@@ -12,37 +12,7 @@
 </template>
 
 <script setup>
+import { formatDate } from "../utils/util";
+
 defineProps(["post"]);
-
-function formatDate(timestamp) {
-  // Convert seconds to milliseconds and add nanoseconds converted to milliseconds
-  const date = new Date(
-    timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000
-  );
-
-  const monthNames = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-  const month = monthNames[date.getMonth()];
-  const day = date.getDate();
-  const year = date.getFullYear();
-  const time = date.toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "numeric",
-    hour12: true,
-  });
-
-  return `${month} ${day}, ${year} at ${time}`;
-}
 </script>

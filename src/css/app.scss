@@ -99,7 +99,7 @@
   font-size: 3rem;
 }
 .text-h6-responsive {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -129,4 +129,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.text-regular-size {
+  font-size: 1rem;
 }
