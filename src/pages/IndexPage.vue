@@ -21,6 +21,20 @@
           I'm a software engineer with a passion for building web applications.
           <br />I'm proficient in frameworks such as Django, Vue.js and Firebase
         </p>
+        <div class="flex justify-center">
+          <div class="flex justify-between" style="width: 300px">
+            <q-btn
+              color="dark"
+              label="Contact Me"
+              to="/contact"
+            />
+            <q-btn
+              color="dark"
+              label="My Resume"
+              @click="getResume()"
+            />
+          </div>
+        </div>
       </div>
     </div>
     <recent-post />
@@ -29,4 +43,12 @@
 
 <script setup>
 import RecentPost from "components/RecentPost.vue";
+import {getFile} from "src/utils/util";
+
+const resumePath = 'docs/New Software Engineering Resume 2024.pdf';
+
+async function getResume() {
+  const downloadUrl = await getFile(resumePath);
+  window.open(downloadUrl, '_blank');
+}
 </script>

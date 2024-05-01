@@ -28,7 +28,7 @@ import MarkdownItAnchor from "markdown-it-anchor";
 import markdownit from "markdown-it";
 import hljs from "highlight.js"; // https://highlightjs.org
 import "highlight.js/styles/xcode.css";
-import {fetchMarkdownFile} from "src/utils/util";
+import {fetchFile} from "src/utils/util";
 
 // Initialize Markdown
 const md = markdownit({
@@ -74,6 +74,6 @@ async function getPost() {
 
 onMounted(async () => {
   post.value = await getPost();
-  markdownContent.value = await fetchMarkdownFile(post.value.content_url);
+  markdownContent.value = await fetchFile(post.value.content_url);
 });
 </script>

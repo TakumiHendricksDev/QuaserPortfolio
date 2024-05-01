@@ -41,14 +41,15 @@ export function formatDate(timestamp) {
   return `${month} ${day}, ${year} at ${time}`;
 }
 
-export async function getMarkdownFile(filePath) {
+export async function getFile(filePath) {
   const fileRef = storageRef(storage, filePath);
   const fileURL = await getDownloadURL(fileRef);
+  console.log(fileURL);
   return fileURL;
 }
 
-export async function fetchMarkdownFile(filePath) {
-  const fileURL = await getMarkdownFile(filePath);
+export async function fetchFile(filePath) {
+  const fileURL = await getFile(filePath);
   const response = await fetch(fileURL);
   const text = await response.text();
   return text;
