@@ -1,3 +1,6 @@
+import {getDownloadURL, ref as storageRef} from "firebase/storage";
+import {storage} from "src/firebase/firebase";
+
 export function formatDate(timestamp) {
   let date;
   if (typeof timestamp === "number") {
@@ -36,4 +39,17 @@ export function formatDate(timestamp) {
   });
 
   return `${month} ${day}, ${year} at ${time}`;
+}
+
+export async function getMarkdownFile(filePath) {
+  const fileRef = storageRef(storage, filePath);
+  const fileURL = await getDownloadURL(fileRef);
+  return fileURL;
+}
+
+export async function fetchMarkdownFile(filePath) {
+  const fileURL = await getMarkdownFile(filePath);
+  const response = await fetch(fileURL);
+  const text = await response.text();
+  return text;
 }

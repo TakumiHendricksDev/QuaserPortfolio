@@ -28,7 +28,7 @@ import MarkdownItAnchor from "markdown-it-anchor";
 import markdownit from "markdown-it";
 import hljs from "highlight.js"; // https://highlightjs.org
 import "highlight.js/styles/xcode.css";
-import { ref as storageRef, getDownloadURL } from "firebase/storage";
+import {fetchMarkdownFile} from "src/utils/util";
 
 // Initialize Markdown
 const md = markdownit({
@@ -59,18 +59,7 @@ const post = ref([]);
 const markdownContent = ref("");
 const route = useRoute();
 
-async function getMarkdownFile(filePath) {
-  const fileRef = storageRef(storage, filePath);
-  const fileURL = await getDownloadURL(fileRef);
-  return fileURL;
-}
 
-async function fetchMarkdownFile(filePath) {
-  const fileURL = await getMarkdownFile(filePath);
-  const response = await fetch(fileURL);
-  const text = await response.text();
-  return text;
-}
 
 async function getPost() {
   const postId = route.params.id; // assuming the id is passed as a route parameter
@@ -86,6 +75,5 @@ async function getPost() {
 onMounted(async () => {
   post.value = await getPost();
   markdownContent.value = await fetchMarkdownFile(post.value.content_url);
-  console.log(post.value);
 });
 </script>
