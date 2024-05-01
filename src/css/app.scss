@@ -60,10 +60,6 @@
   }
 }
 
-.hljs-tag {
-  color: #00897b;
-}
-
 .markdown-heading {
   font-size: 2rem;
   margin-top: 2rem;
@@ -133,5 +129,16 @@
   h2 {
     color: $primary; // Change the color to blue
     font-size: 2rem; // Change the font size to 2rem
+  }
+}
+
+// Overwrite search component
+.ais-SearchBox-input {
+  width: 540px !important;
+
+}
+@media (max-width: 768px) {
+  .ais-SearchBox-input {
+    width: 380px !important;
   }
 }
