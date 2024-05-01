@@ -64,13 +64,6 @@
   color: #00897b;
 }
 
-.code-block {
-  background-color: $grey-2;
-  border: $grey-5 1px solid;
-  padding: 10px;
-  border-radius: 6px;
-}
-
 .markdown-heading {
   font-size: 2rem;
   margin-top: 2rem;
@@ -133,4 +126,12 @@
 
 .text-regular-size {
   font-size: 1rem;
+}
+
+// Styling in my Markdown Component
+.markdown-container {
+  h2 {
+    color: $primary; // Change the color to blue
+    font-size: 2rem; // Change the font size to 2rem
+  }
 }

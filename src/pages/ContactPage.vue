@@ -1,11 +1,10 @@
 <template>
   <q-page>
     <div class="q-pa-xl">
-      <div class="text-h2-responsive text-bold text-grey-9">
-        Contact Me
-      </div>
+      <div class="text-h2-responsive text-bold text-grey-9">Contact Me</div>
       <div class="q-mb-lg text-h6-responsive text-grey-8">
-        If you'd like to reach me either to ask a question or to discuss a project, please fill out the form below.
+        If you'd like to reach me either to ask a question or to discuss a
+        project, please fill out the form below.
       </div>
       <form @submit.prevent="sendEmail">
         <div class="q-mb-md">

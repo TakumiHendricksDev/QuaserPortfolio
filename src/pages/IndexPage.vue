@@ -5,7 +5,10 @@
         <div
           class="text-h1-responsive text-weight-bold letter-space-lg text-grey-9"
         >
-          <span class="text-yellow-10">&lt;/</span>Takumi Hendricks<span class="text-yellow-10">&gt;</span>
+          <span class="text-yellow-10">&lt;/</span>Takumi Hendricks<span
+            class="text-yellow-10"
+            >&gt;</span
+          >
         </div>
         <div
           class="text-h2-responsive text-weight-bold letter-space-xl text-yellow-10 q-mb-xl"

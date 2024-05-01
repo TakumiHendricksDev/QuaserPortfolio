@@ -3,7 +3,9 @@
     <ais-instant-search :search-client="searchClient" index-name="Post">
       <div class="row justify-center q-mt-xl q-mb-xl">
         <div class="text-center flex column flex-center">
-          <div class="text-h2-responsive text-weight-bold q-mb-sm text-yellow-10">
+          <div
+            class="text-h2-responsive text-weight-bold q-mb-sm text-yellow-10"
+          >
             Posts
           </div>
           <div

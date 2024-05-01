@@ -1,8 +1,12 @@
 <template>
   <q-page>
     <div class="q-pa-xl">
-      <div class="text-h2 text-bold text-grey-9 q-mb-md">{{ post.title }}</div>
-      <div class="text-h4 text-grey-8 q-mb-xl">{{ post.description }}</div>
+      <div class="text-h2-responsive text-bold text-grey-9 q-mb-md">
+        {{ post.title }}
+      </div>
+      <div class="text-h6-responsive text-grey-8 q-mb-xl">
+        {{ post.description }}
+      </div>
       <div class="q-pa-lg bg-grey-1 markdown-container">
         <vue-markdown
           :source="markdownContent"
@@ -23,6 +27,7 @@ import VueMarkdown from "vue-markdown-render";
 import MarkdownItAnchor from "markdown-it-anchor";
 import markdownit from "markdown-it";
 import hljs from "highlight.js"; // https://highlightjs.org
+import "highlight.js/styles/xcode.css";
 import { ref as storageRef, getDownloadURL } from "firebase/storage";
 
 // Initialize Markdown
@@ -34,7 +39,7 @@ const md = markdownit({
     if (lang && hljs.getLanguage(lang)) {
       try {
         return (
-          '<pre class="code-block"><code class="hljs">' +
+          '<pre><code class="hljs">' +
           hljs.highlight(str, { language: lang, ignoreIllegals: true }).value +
           "</code></pre>"
         );

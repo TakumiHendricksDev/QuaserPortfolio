@@ -1,7 +1,7 @@
 <template>
   <div class="bg-grey-10 q-py-xl q-px-xl shadow-10">
     <div class="text-h4 text-bold text-yellow-10 q-mb-lg">Recent Post</div>
-    <hr class="q-mb-lg">
+    <hr class="q-mb-lg" />
     <div class="flex">
       <post-card
         v-for="post in recentPosts()"
