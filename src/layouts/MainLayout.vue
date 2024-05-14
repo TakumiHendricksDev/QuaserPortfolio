@@ -3,7 +3,7 @@
     <q-header class="bg-grey-2 q-pa-lg">
       <q-toolbar class="q-mb-md">
         <q-toolbar-title class="text-grey-9 text-bold">
-          Takumi <span class="text-yellow-10">Hendricks</span>
+          Takumi <span class="text-primary">Hendricks</span>
         </q-toolbar-title>
         <q-btn
           flat

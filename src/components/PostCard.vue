@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="block none-decoration border-yellow-10 q-pa-md card-sm text-white bg-grey-10"
+    class="block none-decoration border-primary q-pa-md card-sm text-white bg-grey-10"
     :to="`/posts/${post.id}`"
   >
     <div class="text-bold text-h6">{{ post.title }}</div>

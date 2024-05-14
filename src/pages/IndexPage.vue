@@ -8,7 +8,7 @@
           Takumi Hendricks
         </div>
         <div
-          class="text-h2-responsive text-weight-bold letter-space-xl text-yellow-10 q-mb-xl"
+          class="text-h2-responsive text-weight-bold letter-space-xl text-primary q-mb-xl"
         >
           Software Engineer
         </div>
@@ -17,19 +17,23 @@
           src="https://canopyteam.org/wp-content/uploads/2022/12/hendricks.jpg"
           alt="picture of me"
         />
-        <p class="text-h6-responsive text-grey-9">
+        <p class="text-h6-responsive text-grey-9 q-mb-lg">
           I'm a software engineer with a passion for building web applications.
           <br />I'm proficient in frameworks such as Django, Vue.js and Firebase
         </p>
         <div class="flex justify-center">
-          <div class="flex justify-between" style="width: 300px">
+          <div class="flex justify-between" style="width: 400px">
             <q-btn
-              color="dark"
+              color="primary"
               label="Contact Me"
+              icon="mail"
+              size="md"
               to="/contact"
             />
             <q-btn
-              color="dark"
+              color="primary"
+              icon="cookie"
+              size="md"
               label="My Resume"
               @click="getResume()"
             />
