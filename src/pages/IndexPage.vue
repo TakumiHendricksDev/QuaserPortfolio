@@ -42,17 +42,37 @@
       </div>
     </div>
     <recent-post />
+    <div class="q-py-xl q-px-xl">
+      <div class="flex q-mb-lg">
+        <div class="text-h4 text-bold text-dark q-mr-lg">Projects</div>
+      </div>
+      <div class="flex">
+        <a
+          href="https://icospheregames.vercel.app/"
+          target="_blank"
+          class="project-card shadow-10 full-width"
+        >
+          <div class="text-bold text-h5 text-dark">IcosphereGames</div>
+          <div class="text-grey-9">
+            A website for a game development company. The website is built with
+            Next.js and Firebase. It is a fictional company.
+          </div>
+          <q-icon name="launch" class="text-primary text-h6-responsive" />
+        </a>
+      </div>
+    </div>
   </q-page>
 </template>
 
 <script setup>
 import RecentPost from "components/RecentPost.vue";
-import {getFile} from "src/utils/util";
+import { getFile } from "src/utils/util";
+import PostCard from "components/PostCard.vue";
 
-const resumePath = 'docs/New Software Engineering Resume 2024.pdf';
+const resumePath = "docs/New Software Engineering Resume 2024.pdf";
 
 async function getResume() {
   const downloadUrl = await getFile(resumePath);
-  window.open(downloadUrl, '_blank');
+  window.open(downloadUrl, "_blank");
 }
 </script>

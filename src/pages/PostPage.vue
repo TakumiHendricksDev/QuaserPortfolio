@@ -28,7 +28,7 @@ import MarkdownItAnchor from "markdown-it-anchor";
 import markdownit from "markdown-it";
 import hljs from "highlight.js"; // https://highlightjs.org
 import "highlight.js/styles/xcode.css";
-import {fetchFile} from "src/utils/util";
+import { fetchFile } from "src/utils/util";
 
 // Initialize Markdown
 const md = markdownit({
@@ -58,8 +58,6 @@ const plugins = [MarkdownItAnchor];
 const post = ref([]);
 const markdownContent = ref("");
 const route = useRoute();
-
-
 
 async function getPost() {
   const postId = route.params.id; // assuming the id is passed as a route parameter

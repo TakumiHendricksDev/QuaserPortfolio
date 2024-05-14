@@ -124,6 +124,20 @@
   font-size: 1rem;
 }
 
+.project-card {
+  width: 100%;
+  border: var(--q-dark) 2px solid;
+  border-radius: 12px;
+  padding: 28px;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out; // This will make the scaling smooth
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+  border: var(--q-primary) 2px solid;
+}
+
 // Styling in my Markdown Component
 .markdown-container {
   h2 {
@@ -135,7 +149,6 @@
 // Overwrite search component
 .ais-SearchBox-input {
   width: 540px !important;
-
 }
 @media (max-width: 768px) {
   .ais-SearchBox-input {

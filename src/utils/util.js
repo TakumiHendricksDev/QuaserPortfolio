@@ -1,5 +1,5 @@
-import {getDownloadURL, ref as storageRef} from "firebase/storage";
-import {storage} from "src/firebase/firebase";
+import { getDownloadURL, ref as storageRef } from "firebase/storage";
+import { storage } from "src/firebase/firebase";
 
 export function formatDate(timestamp) {
   let date;
